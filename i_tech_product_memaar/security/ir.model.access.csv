@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_yarn_type_user,yarn_type_user,model_yarn_type,base.group_user,1,1,1,1
+access_total_height_user,total_height_user,model_total_height,base.group_user,1,1,1,1
+access_loop_weight_user,loop_weight_user,model_loop_weight,base.group_user,1,1,1,1

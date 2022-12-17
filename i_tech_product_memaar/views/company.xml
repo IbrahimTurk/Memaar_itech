@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+      <record id="res_company_form_view_inherit" model="ir.ui.view">
+        <field name="name">res.company.product.form.inherit</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+         <xpath expr="//page[1]" position="after">
+            <page name="additional" string="Additional Fields For Products">
+            
+               <field name="yarn_type" string="Yarn Type"/>
+               <field name="total_height" string="Total Height"/>
+               <field name="loop_weight" string="Loop Weight"/>
+             </page>
+          </xpath>
+        </field>
+      </record>
+    </data>
+
+</odoo>
+
+
+
+
