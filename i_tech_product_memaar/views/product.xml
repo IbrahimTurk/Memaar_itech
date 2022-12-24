@@ -8,9 +8,12 @@
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='categ_id']" position="after">
-               <field name="yarn_type"/>
-               <field name="total_height"/>
-               <field name="loop_weight"/>
+                <field name="yarn_type_setting" invisible="1"/>
+                <field name="total_height_setting" invisible="1"/>
+                <field name="loop_weight_setting" invisible="1"/>
+               <field name="yarn_type" attrs="{'invisible': [('yarn_type_setting', '=',False )]}"/>
+               <field name="total_height" attrs="{'invisible': [('total_height_setting', '=',False )]}"/>
+               <field name="loop_weight" attrs="{'invisible': [('loop_weight_setting', '=',False )]}"/>
             </xpath>
         </field>
       </record>
@@ -20,9 +23,12 @@
         <field name="inherit_id" ref="product.product_normal_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='categ_id']" position="after">
-               <field name="yarn_type"/>
-               <field name="total_height"/>
-               <field name="loop_weight"/>
+            <field name="yarn_type_setting" invisible="1"/>
+                <field name="total_height_setting" invisible="1"/>
+                <field name="loop_weight_setting" invisible="1"/>
+          <field name="yarn_type" attrs="{'invisible': [('yarn_type_setting', '=',False )]}"/>
+               <field name="total_height" attrs="{'invisible': [('total_height_setting', '=',False )]}"/>
+               <field name="loop_weight" attrs="{'invisible': [('loop_weight_setting', '=',False )]}"/>
             </xpath>
         </field>
       </record>
@@ -32,9 +38,12 @@
         <field name="inherit_id" ref="product.product_template_tree_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[last()]" position="after">
-                <field name="yarn_type"/>
-                <field name="total_height"/>
-                <field name="loop_weight"/>
+            <field name="yarn_type_setting" invisible="1"/>
+                <field name="total_height_setting" invisible="1"/>
+                <field name="loop_weight_setting" invisible="1"/>
+                <field name="yarn_type" attrs="{'invisible': [('yarn_type_setting', '=',False )]}"/>
+               <field name="total_height" attrs="{'invisible': [('total_height_setting', '=',False )]}"/>
+               <field name="loop_weight" attrs="{'invisible': [('loop_weight_setting', '=',False )]}"/>
             </xpath>
         </field>
       </record>
@@ -44,9 +53,12 @@
         <field name="inherit_id" ref="product.product_product_tree_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[last()]" position="after">
-                <field name="yarn_type"/>
-                <field name="total_height"/>
-                <field name="loop_weight"/>
+            <field name="yarn_type_setting" invisible="1"/>
+                <field name="total_height_setting" invisible="1"/>
+                <field name="loop_weight_setting" invisible="1"/>
+              <field name="yarn_type" attrs="{'invisible': [('yarn_type_setting', '=',False )]}"/>
+               <field name="total_height" attrs="{'invisible': [('total_height_setting', '=',False )]}"/>
+               <field name="loop_weight" attrs="{'invisible': [('loop_weight_setting', '=',False )]}"/>
             </xpath>
         </field>
       </record>

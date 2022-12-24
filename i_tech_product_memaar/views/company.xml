@@ -9,10 +9,11 @@
         <field name="arch" type="xml">
          <xpath expr="//page[1]" position="after">
             <page name="additional" string="Additional Fields For Products">
-            
+               <group> 
                <field name="yarn_type" string="Yarn Type"/>
                <field name="total_height" string="Total Height"/>
                <field name="loop_weight" string="Loop Weight"/>
+               </group>
              </page>
           </xpath>
         </field>
