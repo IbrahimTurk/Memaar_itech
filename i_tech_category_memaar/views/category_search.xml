@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+      <record id="add_fields_sales_order_line_view_inherit" model="ir.ui.view">
+        <field name="name">fields.selas.order.line.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="attributes">
+               <!--<attribute name="domain">[('categ_id', '=', category_saerch)]</attribute>-->
+               <attribute name="domain">[]</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="before">
+               <field name="category_saerch_setting" invisible="1"/>
+               <field name="category_saerch" optional="show" attrs="{'invisible': [('category_saerch_setting', '=',False )]}"/>
+            </xpath>
+        </field>
+      </record>
+
+
+      <record id="add_fields_purchases_order_line_view_inherit" model="ir.ui.view">
+        <field name="name">fields.purchases.order.line.form.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="attributes">
+               <!--<attribute name="domain">[('categ_id', '=', category_saerch)]</attribute>-->
+               <attribute name="domain">[]</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="before">
+               <field name="category_saerch_setting" invisible="1"/>
+               <field name="category_saerch" optional="show" attrs="{'invisible': [('category_saerch_setting', '=',False )]}"/>
+            </xpath>
+        </field>
+      </record>
+    </data>
+
+</odoo>
+
+
+
+
