@@ -13,6 +13,8 @@
                <field name="yarn_type" string="Yarn Type"/>
                <field name="total_height" string="Total Height"/>
                <field name="loop_weight" string="Loop Weight"/>
+               <field name="gloss_level" string="Gloss Level"/>
+               <field name="base_type" string="Base Type"/>
                </group>
              </page>
           </xpath>

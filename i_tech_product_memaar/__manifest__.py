@@ -13,6 +13,8 @@
         "security/ir.model.access.csv",
         'views/product.xml',
         'views/company.xml',
+        "reports/memaar_so_print.xml",
+        "reports/templates/memaar_so_template_report.xml",
     ],
     'demo': [],
     'installable': True,

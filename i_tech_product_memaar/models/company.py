@@ -9,6 +9,8 @@ class CompanyFields(models.Model):
     yarn_type = fields.Boolean("Yarn Type")
     total_height = fields.Boolean("Total Height")
     loop_weight = fields.Boolean("Loop Weight")
+    gloss_level = fields.Boolean("Gloss Level")
+    base_type = fields.Boolean("Base Type")
 
 
 

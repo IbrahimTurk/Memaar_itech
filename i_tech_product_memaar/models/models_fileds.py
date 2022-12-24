@@ -21,3 +21,17 @@ class LoopWeight(models.Model):
     _rec_name = 'name'
 
     name = fields.Char()    
+
+class Shade_Type(models.Model):
+    _name = 'gloss.level'
+    _rec_name = 'name'
+
+    name = fields.Char()
+    sequence_code = fields.Char('Sequence',required=True)
+
+class Shade_Type(models.Model):
+    _name = 'base.type'
+    _rec_name = 'name'
+
+    name = fields.Char()
+    sequence_code = fields.Char('Sequence',required=True)        

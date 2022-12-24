@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+         <template id="memaar_so_template">
+            <t t-call="web.html_container">
+    <t t-call="web.external_layout" t-lang="ar">
+            <t t-foreach="docs" t-as="doc">
+                <div class="page">
+                     <div style="position:relative;width : 100%;top:-90px;" class="text-center">
+                    <img t-att-src="'/i_tech_hotels/static/src/image/logo.png'" width="400" height="400" border="2"/>
+                  </div>
+                    <div style="width : 100%" class="text-right">
+                      <strong>اسم الزبون :</strong>
+                     
+                        <span>
+                               <strong t-field="doc.partner_id"/>  
+                        </span>
+                    </div>
+                     <br>
+                    </br>
+                    <div style="width : 100%" class="text-right">
+                        <strong>الغرفة :</strong>
+                        <span>
+                          
+                        </span>
+                    </div>
+                     <br>
+                    </br>
+                    <div style="width : 100%" class="text-right">
+                        <strong> مدة الحجز :</strong>
+                        <span>
+                          <strong> من تاريخ  :</strong>
+                          <span>
+                          
+                        </span>
+                         <strong> الى تاريخ   :</strong>
+                          <span>
+                           
+                        </span>
+                        </span>
+                    </div>
+                     <br>
+                    </br>
+                    <div style="width : 100%" class="text-right">
+                        <strong>مسئول المبيعات :</strong>
+                        <span>
+                         
+                        </span>
+                    </div>
+                    <br/>
+                    <br/>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr style="color:  black">
+                                <th class="text-center">عدد الليالي</th>
+                                <th class="text-center">السعر</th>
+                                <th class="text-center">الاجمالي</th>
+                            </tr>
+                            
+                           
+                        </thead>
+                    </table>
+                    <br/>
+                    
+                    <br/>
+                     <br/>
+                    
+                    <br/>
+                     <br/>
+                    
+                    <br/>
+                     <div style="width:80%" name="signature">
+                        <div class="mt32 ml64 mr4 text-right">
+                            <strong>التوقيع</strong>
+                        </div>
+                        <div/>
+                    </div>
+                </div>
+            </t>
+         </t>
+      </t>
+    </template>
+
+
+ 
+
+
+
+
+    </data>
+
+</odoo>
